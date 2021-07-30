@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 
-<head>
+<head >
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -20,69 +20,96 @@
 
 
     <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
-    <meta name="author" content="www.frebsite.nl" />
+
     <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
     <meta name="robots" content="noindex, nofollow" />
     <title>PMóvel</title>
     <link type="text/css" rel="stylesheet" href="examples.css" />
     <link type="text/css" rel="stylesheet" href="mmenu.css" />
-    <script type="text/javascript" src="timer.js"></script>
-    <link type="text/css" rel="stylesheet" href="timer.css" />
-    <script type="text/javascript" src="index.js"></script>
+    <script src="mmenu.js"></script>
     <script type="text/javascript">
-        $(function () {
-            $('nav#menu').mmenu();
-        });
-        $('.carousel').carousel({
-            interval: 2000
-        });
+
+document.addEventListener(
+                "DOMContentLoaded", () => {
+                    new Mmenu( "#menu", {
+                        navbar: {
+        title: " "
+    },
+                       "extensions": [
+                          "pagedim-black",
+                          "position-left",
+                          "custom-width"
+                       ],
+                       "onClick": {
+                            "close": true,
+                            "preventDefault": false
+                       },
+                       
+                    });
+                }
+            );
+                        
+
     </script>
+
+
 </head>
 
-<body>
-
+<body id="ola">
+   
+    <nav id="menu">
+        <ul>
+            <li><a href="#ola" >Inicio</a></li>
+            <li><a href="#feats">Sistema</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#clients">Clientes</a></li>
+            <li><a href="#feats">Contato</a></li>
+        </ul>
+    </nav>
     <div id="page">
-        <div id="header"
-            style="display: flex; justify-content: space-between; align-items: center; padding-right: 5px;"
-            class="sticky-top" >
+        <div id="header" style="display: flex; justify-content: space-between; align-items: center; padding-right: 5px;"
+            class="sticky-top">
             <a href="#menu"></a>
             <img src="imgs/logo_white.png" style="margin-left: 20px;">
             <img src="imgs/br_flag.png" style="max-width: 33px; max-height: 33px;">
         </div>
         <div id="content">
-            <div class="cont">
-                <div class="front">
-                    <div class="slogan">
-                        <p>clicou,<br> marcou,<br> fechou!</p>
-                    </div>
-                    <div class="animation">
-                        <div class="phone1">
-                            <img src="imgs/phone_animation_1.png">
+            <div class="cont" >
+                
+                <div class="front_cont" >
+                    <div class="front" >
+                        <div class="slogan">
+                            <p>clicou,<br> marcou,<br> fechou!</p>
                         </div>
-                        <div class="phone2">
+                        <div class="animation">
+                            <div class="phone1">
+                                <img src="imgs/phone_animation_1.png">
+                            </div>
+                            <div class="phone2">
 
-                            <img src="imgs/phone_animation_2.png">
+                                <img src="imgs/phone_animation_2.png">
+                            </div>
                         </div>
-                    </div>
-                    <div class="descwrapper" style="margin-top: 20px;">
-                        <div class="desc">
-                            <p>Registros de entrada e saída, <br>horas extras, banco de horas e relatórios.<br>
-                                Atendimento as
-                                portarias
-                                1510 e
-                                373<br> do Ministério do Trabalho referentes ao<br> controle de ponto online.</p>
+                        <div class="descwrapper" style="margin-top: 20px;">
+                            <div class="desc">
+                                <p>Registros de entrada e saída, <br>horas extras, banco de horas e relatórios.<br>
+                                    Atendimento as
+                                    portarias
+                                    1510 e
+                                    373<br> do Ministério do Trabalho referentes ao<br> controle de ponto online.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="deal">
-                        <div class="flavor">
-                            <h2>Com a </h2>
-                            <h5 class="bold">Pmóvel</h5><br>
-                            <h3>você gerencia seu negócio</h3><br>
-                            <h2> com </h2>
-                            <h1 class="bold">facilidade</h1>
-                        </div>
-                        <div class="deal_btn_wrapper">
-                            <button type="button" class="deal_btn">CONTRATAR</button>
+                        <div class="deal">
+                            <div class="flavor">
+                                <h2>Com a </h2>
+                                <h5 class="bold">Pmóvel</h5><br>
+                                <h3>você gerencia seu negócio</h3><br>
+                                <h2> com </h2>
+                                <h1 class="bold">facilidade</h1>
+                            </div>
+                            <div class="deal_btn_wrapper">
+                                <button type="button" class="deal_btn">CONTRATAR</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -91,8 +118,8 @@
 
 
                 </div>
-                <div class="features">
-
+                <div id="feats"></div>
+                <div class="features" style="margin-top: 100px;">
 
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
                         data-interval="10000">
@@ -223,8 +250,8 @@
                 </div>
 
 
-                <div class="blog">
-
+                <div class="blog" id="clients">
+                    <div id="blog"></div>
                     <div class="office">
                         <img src="imgs/blog_img.png">
                     </div>
@@ -299,7 +326,7 @@
                         </div>
                         <div class="clap">
 
-                                <img src="imgs/clap.gif">
+                            <img src="imgs/clap.gif">
 
 
                         </div>
@@ -338,18 +365,7 @@
             </div>
 
         </div>
-        <nav id="menu" >
-            <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">SISTEMA</a></li>
-                <li><a href="#">CLIENTES</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTATO</a></li>
-                <li><a href="#">ACESSAR</a></li>
-
-
-            </ul>
-        </nav>
+        
 
     </div>
 
