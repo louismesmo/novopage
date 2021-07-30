@@ -1,6 +1,6 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 
-<head >
+<head>
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -16,8 +16,8 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/07c279dcf3.js" crossorigin="anonymous"></script>
 
     <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
 
@@ -27,57 +27,99 @@
     <link type="text/css" rel="stylesheet" href="examples.css" />
     <link type="text/css" rel="stylesheet" href="mmenu.css" />
     <script src="mmenu.js"></script>
+
     <script type="text/javascript">
 
-document.addEventListener(
-                "DOMContentLoaded", () => {
-                    new Mmenu( "#menu", {
-                        navbar: {
-        title: " "
-    },
-                       "extensions": [
-                          "pagedim-black",
-                          "position-left",
-                          "custom-width"
+        document.addEventListener(
+            "DOMContentLoaded", () => {
+                new Mmenu("#menu", {
+                    navbar: {
+                        title: " "
+                    },
+                    "extensions": [
+                        "pagedim-black",
+                        "position-left",
+                        "custom-width"
+                    ],
+                    "onClick": {
+                        "close": true,
+                        "preventDefault": false
+                    },
+                    "navbars": [
+                          {
+                             "position": "bottom",
+                             "content": [
+                                "<a class='fa fa-linkedin' style='color: white' 'href='#/'></a>",
+                                "<a class='fa fa-instagram' style='color: white' href='#/'></a>",
+                                "<a class='fa fa-facebook' style='color: white' href='#/'></a>"
+                             ]
+                          }
                        ],
-                       "onClick": {
-                            "close": true,
-                            "preventDefault": false
-                       },
-                       
-                    });
-                }
-            );
-                        
+                       "setSelected": {
+                  "hover": true,
+                  "parent": true
+               }
+                });
+            }
+        );
+
 
     </script>
 
 
 </head>
 
-<body id="ola">
-   
+<body id="ola" class="hash">
+
     <nav id="menu">
         <ul>
-            <li><a href="#ola" >Inicio</a></li>
+            <li class="Selected"><a href="#ola">Inicio</a></li>
             <li><a href="#feats">Sistema</a></li>
-            <li><a href="#blog">Blog</a></li>
             <li><a href="#clients">Clientes</a></li>
-            <li><a href="#feats">Contato</a></li>
+            <li><a href="#mail">Contato</a></li>
         </ul>
     </nav>
     <div id="page">
-        <div id="header" style="display: flex; justify-content: space-between; align-items: center; padding-right: 5px;"
+        <div id="header" style="display: flex; justify-content: center; align-items: center; padding-right: 5px;"
             class="sticky-top">
-            <a href="#menu"></a>
-            <img src="imgs/logo_white.png" style="margin-left: 20px;">
-            <img src="imgs/br_flag.png" style="max-width: 33px; max-height: 33px;">
+            <div class="w-100 d-flex justify-content-between align-items-center" style="max-width: 1000px;">
+                <a href="#menu" style="height: 100%;"></a>
+
+                <img src="imgs/logo_white.png" class="logo_img">
+                <div class="nav_bar">
+
+
+                    <button type="button" onclick="window.location.href='#ola'">Inicio</button>
+                    <button type="button" onclick="window.location.href='#feats'">Sistema</button>
+                    <button type="button" onclick="window.location.href='#clients'">Clientes</button>
+                    <button type="button" onclick="window.location.href='#mail'">Contato</button>
+                    <button type="button" id="deal_btn_header" onclick="window.location.hash='#ola'">CONTRATAR</button>
+
+
+
+                </div>
+                <div class="btn-group dropdown d-flex align-self-center" style="align-self: flex-end;">
+                    <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" style="background-color: transparent; border-color: transparent;">
+
+                        <img src="imgs/br_flag.png" style="max-width: 44px; max-height: 44px;">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right animate__animated animate__zoomInRight animate__faster">
+
+                        <button class="dropdown-item" type="button">Português</button>
+                        <button class="dropdown-item" type="button">English</button>
+                        <button class="dropdown-item" type="button">Español</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
         <div id="content">
-            <div class="cont" >
-                
-                <div class="front_cont" >
-                    <div class="front" >
+            <div class="cont">
+
+                <div class="front_cont">
+                    <div class="front">
                         <div class="slogan">
                             <p>clicou,<br> marcou,<br> fechou!</p>
                         </div>
@@ -113,13 +155,137 @@ document.addEventListener(
                         </div>
                     </div>
                 </div>
-                <div class="timer">
+
+                <div id="feats" class="hash"></div>
+
+                <div class="features_wide">
+
+                    <div class="features_content">
+
+                        <div class="features_column">
+                            <div class="feat_item">
+                                <div class="icon_title">
+                                    <img src="imgs/icons/control.png">
+                                    <h2>Controle de Ponto</h2>
+                                </div>
+                                <div class="feat_txt">
+                                    <h4>Dinamismo e facilidade para registrar e controlar entradas e saídas.</h4>
+                                </div>
+                            </div>
+                            <div class="feat_item">
+                                <div class="icon_title">
+                                    <img src="imgs/icons/fingerprint.png">
+                                    <h2>Biometria</h2>
+                                </div>
+                                <div class="feat_txt">
+                                    <h4>Controle de ponto através do reconhecimento da impressão digital dos
+                                        colaboradores.</h4>
+                                </div>
+                            </div>
+                            <div class="feat_item">
+                                <div class="icon_title">
+                                    <img src="imgs/icons/qrcode.png">
+                                    <h2>QR Code</h2>
+                                </div>
+                                <div class="feat_txt">
+                                    <h4>Controle de ponto através de leitura de QR Code do colaborador.</h4>
+                                </div>
+                            </div>
+                        </div>
 
 
+
+                        <div class="features_column">
+                            <div class="feat_item">
+                                <div class="icon_title">
+                                    <img src="imgs/icons/selfie.png">
+                                    <h2>Selfie</h2>
+                                </div>
+                                <div class="feat_txt">
+                                    <h4>Possibilidade de registro de selfies durante os registros.</h4>
+                                </div>
+                            </div>
+                            <div class="feat_item">
+                                <div class="icon_title">
+                                    <img src="imgs/icons/geolocal.png">
+                                    <h2>Geolocalização</h2>
+                                </div>
+                                <div class="feat_txt">
+                                    <h4>Veja em tempo real a localização dos registros de entrada e saída.</h4>
+                                </div>
+                            </div>
+                            <div class="feat_item">
+                                <div class="icon_title">
+                                    <img src="imgs/icons/people.png">
+                                    <h2>Ausências</h2>
+                                </div>
+                                <div class="feat_txt">
+                                    <h4>Envio de atestado para aprovação do gestor.</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="features_column">
+                            <div class="feat_item">
+                                <div class="icon_title">
+                                    <img src="imgs/icons/document.png">
+                                    <h2>Documentos</h2>
+                                </div>
+                                <div class="feat_txt">
+                                    <h4>Módulo de armazenamento de documentos e aprovação eletrônica pelo
+                                        colaborador.</h4>
+                                </div>
+                            </div>
+                            <div class="feat_item">
+                                <div class="icon_title">
+                                    <img src="imgs/icons/rules.png">
+                                    <h2>Portarias do MTE</h2>
+                                </div>
+                                <div class="feat_txt">
+                                    <h4>Deacordo com as portarias 1510 e 373 do MTe referente a jornada do
+                                        colaborador.</h4>
+                                </div>
+                            </div>
+                            <div class="feat_item">
+                                <div class="icon_title">
+                                    <img src="imgs/icons/api.png">
+                                    <h2>Integração</h2>
+                                </div>
+                                <div class="feat_txt">
+                                    <h4>Disponibilidade de API, possibilitando a comunicação com o seu sistema.</h4>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                    </div>
 
                 </div>
-                <div id="feats"></div>
-                <div class="features" style="margin-top: 100px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="features" style="margin-top: 50px;">
 
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
                         data-interval="10000">
@@ -362,10 +528,51 @@ document.addEventListener(
 
 
                 </div>
+
+                <div class="budget_slider"></div>
+                
+                <div class="footer">
+<div class="assin">
+    
+</div>
+<div class="mail_border">
+                    <div class="mail">
+
+                        <form class="w-100 border border-light p-5">
+    
+                            <p class="h4 mb-4 text-center">FALE CONOSCO</p>
+                        
+                        
+                            <input type="text" id="name" class="form-control mb-4" placeholder="Nome Completo">
+                        
+                            <input type="email" id="email" class="form-control mb-4" placeholder="email@email.com">
+                        
+                            <input type="text" id="phone" class="form-control mb-4" placeholder="(xx) 9 XXXX - XXXX">
+                        
+                            <input type="text" id="client" class="form-control mb-4" placeholder="Empresa Ltda">
+                        
+                            <select class="browser-default custom-select mb-4" id="lifes">
+                                <option value="" disabled="" selected="">Escolha uma opção</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        
+                            <button class="btn btn-info btn-block" type="submit">Quero conhecer mais!</button>
+                        </form>
+                            
+    
+    
+                    </div>
+                </div>
+                </div>
+
+
+
             </div>
 
         </div>
-        
+
 
     </div>
 
