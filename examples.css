@@ -4,6 +4,10 @@
   font-family: "PeaceSans";
   src: url("fonts/Peace_Sans_Webfont.woff") format("woff");
 }
+@font-face {
+  font-family: "Brusher";
+  src: url("fonts/Brusher.woff") format("woff");
+}
 html {scroll-behavior: smooth;}
 html,
 body {
@@ -377,7 +381,7 @@ button:focus {
   display: flex;
   width: 100%;
   height: 80vh;
-  min-height: 650px;
+  max-height: 650px;
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: center;
@@ -503,7 +507,7 @@ button:focus {
 .clap {
   display: flex;
   justify-content: center;
-  align-self: flex-start !important;
+  align-self: flex-start;
   height: 20%;
   width: 100%;
 }
@@ -605,7 +609,76 @@ button:focus {
   background-color: transparent;
   z-index: -1;
 }
+.plans {
+  display: none;
+}
+.budget_slider {
+  display: flex;
+  width: 100%;
+  height: 420px;
+  align-items: center;
+  flex-flow: column nowrap;
+background-color: #f2f2f2;
+  justify-content: flex-start;
 
+}
+.budget_slider .content span{
+  text-align: left;
+  font-size: 16px;
+  line-height: 30px;
+}
+.budget_slider .content2 span{
+  text-align: left;
+  font-size: 14px;
+  line-height: 25px;
+}
+.budget_slider .content3 span{
+  text-align: left;
+  font-size: 14px;
+  line-height: 22px;
+}
+.plan_slider {
+  width: 100%;
+  background: #f2f2f2;
+  height: 100px;
+}
+.flavor_slider{
+  display: flex;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f2f2f2
+}
+.flavor_slider_txt {
+  text-align: center;
+}
+.flavor_slider h1{
+  display: inline;
+  font-family: "Brusher";
+  font-size: 30px;
+  color: black;
+  text-align: center;
+
+}
+.flavor_slider h3{
+  display: inline;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 23px;
+  color: #333;
+  text-align: center;
+
+}
+.flavor_slider h2{
+  text-align: center;
+  display: inline;
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 25px;
+  color: black;
+}
 .footer {
   display: flex;
   align-self: flex-end;
@@ -645,6 +718,18 @@ background: white;
   padding: 10px;
 margin-bottom: 40px;
 }
+@media screen and (max-width: 480px) {
+  .foot_cont {
+    width: 100%;
+  }
+  .mail_border{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .btn_send{
+    font-size: small;
+  }
+}
 .mail {
   display: flex;
   justify-content: center;
@@ -678,6 +763,7 @@ margin-bottom: 40px;
   background-color: #3d667b;
   border-color: white;
 }
+
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   #header {
     background: #3d667b;
@@ -689,6 +775,8 @@ margin-bottom: 40px;
     height: 50px;
     padding: 0 50px;
   }
+.budget_slider{display: none !important;}
+
   .features_wide{display: none;}
   .front_cont {
     display: flex;
@@ -734,7 +822,10 @@ margin-bottom: 40px;
     color: white;
     text-align: left;
   }
+.clients{
+  max-height: 400px;
 
+}
   .descwrapper,
   .deal {
     width: 33%;
@@ -772,6 +863,7 @@ margin-bottom: 40px;
     min-width: 340px;
 
     height: 85%;
+    max-height: 200px;
     width: 100%;
     justify-content: center;
     align-items: flex-start;
@@ -780,7 +872,7 @@ margin-bottom: 40px;
   }
   .com1,
   .com2 {
-    width: 40%;
+    width: 400px;
     flex-flow: column;
     z-index: 2;
     justify-content: space-between;
@@ -791,11 +883,13 @@ margin-bottom: 40px;
   .clap {
     display: flex;
     align-items: center;
+    align-self: center;
+    justify-self: center;
     width: 10%;
   }
   .clap img {
     width: 80%;
-    height: 46%;
+    height: auto;
   }
   .com2 .com_txt {
     display: flex;
@@ -806,6 +900,7 @@ margin-bottom: 40px;
     justify-self: flex-end;
     align-items: center;
   }
+  .com1,.com2{height: 100%;}
   .com1 .com_txt {
     display: flex;
     height: 120px;
@@ -829,7 +924,7 @@ margin-bottom: 40px;
   }
   .logo img {
     filter: grayscale(1);
-    max-width: 1%;
+    max-width: 80%;
     height: auto;
     
   }
@@ -865,7 +960,6 @@ margin-bottom: 40px;
 }  
 
 
-
 }
 
 
@@ -894,6 +988,8 @@ margin-bottom: 40px;
     width: 100%;
     justify-content: space-evenly!important;
   }
+.budget_slider{display: none !important;}
+
   #header a{display: none;}
   #header .nav_bar {
     display: flex;
@@ -924,7 +1020,7 @@ margin-bottom: 40px;
   #page{width: 100%;}
   .cont{
     background: rgb(61,102,123);
-background: linear-gradient(180deg, rgba(61,102,123,1) 0%, rgba(255,255,255,1) 50%);
+background: linear-gradient(180deg, rgb(61,102,123) 0%, rgba(255,255,255,1) 35%);
 
   }
 #header img {
@@ -1062,6 +1158,9 @@ background: linear-gradient(180deg, rgba(61,102,123,1) 0%, rgba(255,255,255,1) 5
     color: white;
     font-size: 19.7px;
     font-weight: 300;
+  }
+  .clients{
+    max-height: 400px;
   }
   .comments {
     display: flex;
@@ -1250,7 +1349,9 @@ background: linear-gradient(180deg, rgba(61,102,123,1) 0%, rgba(255,255,255,1) 5
     align-self: center;
   }
 .logos{height: 40%; align-items: center; width: 70%;}
-
+.plans {
+  display: flex;
+}
 
 .logos img{
   min-width: 90%;
@@ -1262,6 +1363,8 @@ background: linear-gradient(180deg, rgba(61,102,123,1) 0%, rgba(255,255,255,1) 5
   flex-flow: row-reverse nowrap;
   align-items: center;
   justify-content: center;
+  max-height: 640px !important;
+
 }
 .mail_border{
     margin-left: 40px;
@@ -1294,6 +1397,7 @@ background: linear-gradient(180deg, rgba(61,102,123,1) 0%, rgba(255,255,255,1) 5
     height: 60px;
     padding: 0 50px;
   }
+  .budget_slider{display: none !important;}
   #header a{display: none;}
   #header .nav_bar {
     display: flex;
@@ -1323,7 +1427,7 @@ background: linear-gradient(180deg, rgba(61,102,123,1) 0%, rgba(255,255,255,1) 5
   #page{width: 100%;}
   .cont{
     background: rgb(61,102,123);
-background: linear-gradient(180deg, rgba(61,102,123,1) 0%, rgba(255,255,255,1) 50%);
+background: linear-gradient(180deg, rgba(61,102,123,1) 0%, rgba(255,255,255,1) 25%);
 
   }
   .front_cont {
@@ -1449,6 +1553,9 @@ background: linear-gradient(180deg, rgba(61,102,123,1) 0%, rgba(255,255,255,1) 5
     color: white;
     font-size: 19.7px;
     font-weight: 300;
+  }
+  .clients{
+    max-height: 400px;
   }
   .comments {
     display: flex;
@@ -1627,21 +1734,81 @@ background: linear-gradient(180deg, rgba(61,102,123,1) 0%, rgba(255,255,255,1) 5
     height: auto !important;
     opacity: 0.7 !important;
   }
-  .clients {
+  .comments {
     display: flex;
+    max-width: 800px;
+    min-width: 340px;
+
+    height: 85%;
+    max-height: 200px;
     width: 100%;
-    max-width: 1000px;
-    height: 600px;
-    flex-flow: column nowrap;
     justify-content: center;
+    align-items: flex-start;
+    align-self: center;
+    flex-flow: row nowrap;
+  }
+  .com1,
+  .com2 {
+    width: 400px;
+    flex-flow: column;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    margin-top: 0 !important;
+  }
+  .clap {
+    display: flex;
     align-items: center;
     align-self: center;
+    justify-self: center;
+    width: 10%;
   }
-.logos{height: 20%; align-items: center;min-width: 700px;}
-.com1, .com2{width: 400px;}
-.clap{width: 100px;display: flex; align-self: flex-start;}
+  .clap img {
+    width: 80%;
+    height: auto;
+  }
+  .com2 .com_txt {
+    display: flex;
+    height: 120px;
+    margin-bottom: 0;
+    margin-top: 0;
+    align-self: center;
+    justify-self: flex-end;
+    align-items: center;
+  }
+  .com1,.com2{height: 100%;}
+  .com1 .com_txt {
+    display: flex;
+    height: 120px;
+    margin-bottom: 0;
+    margin-top: 0;
+    align-self: center;
+    justify-self: flex-start;
+    align-items: center;
+  }
+  .clients {
+    flex-flow: row wrap;
+    max-width: 100%;
+    justify-content: center;
+  }
+  .logos {
+    min-width: 610px;
+    height: 140px;
+  }
+  .logo{
+    max-width: 20%;
+  }
+  .logo img {
+    filter: grayscale(1);
+    max-width: 80%;
+    height: auto;
+    
+  }
 
-
+.plans {
+  display: flex;
+}
 
 .mail_border{
     margin-left: 40px;

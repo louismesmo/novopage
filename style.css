@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap");
+* {
+  padding:0;
+  margin:0;
+  
+}
+
+
+
+.section-slider {
+  background-color: #f2f2f2;
+  width:100%;
+ 
+  
+  display:flex;
+}
+.section-slider .container {
+  width:100%;
+
+  height:100%;
+  display:flex;
+  max-width:1200px;
+  flex-direction: column;
+  padding-bottom:50px;
+}
+.section-slider .assetSlider {
+  min-height:100px;
+  max-height:180px;
+  
+  width:40%;
+  display:flex;
+  
+  flex-direction: row;
+}
+
+
+.section-slider .assetSlider img {
+  width:34%;
+  height:100%;
+  margin-top:-3px;
+  
+}
+.section-slider .assetSlider .planText {
+  width:100%;
+  text-align:center;
+  height:100%;
+  
+  margin-top:12px;
+  display:flex;
+
+}
+
+.section-slider .assetSlider .planText p {
+  font-size:1.7rem;
+  color: #3d667b;
+  text-align:center;
+  
+}
+.section-slider .plans-container {
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items:center;
+}
+.section-slider .plans-container h1{
+  font-size:2.4rem;
+  color: #3d667b;
+}
+.section-slider .plans-container .slidecontainer {
+  width:100%;
+}
+.section-slider .plans-container .slider-info > p{
+  font-size:20px;
+}
+.section-slider .plans-container .slidecontainer .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.section-slider .plans-container .slidecontainer .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%; 
+  background: #04AA6D;
+  cursor: pointer;
+}
+.section-slider .plans-container .slidecontainer .slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+.section-slider .plans-container p{
+  color:#3d667b;
+  text-align:center;
+}
+.section-slider .plans-container .plans {
+  width:100%;
+  
+  display:flex;
+  flex-direction: row;
+  
+  justify-content: space-between;
+}
+.section-slider .plans-container .plans .plan-box {
+  width:calc(100% / 3.2);
+  background-color:#f2f2f2;
+  min-height:320px;
+  max-height:380px;
+ 
+  border-radius:5.6px;
+  box-shadow:  0 0 2.2em #afaeae;
+}
+.section-slider .plans-container .plans .plan-box:nth-of-type(1) {
+  border: 5px solid #f2f2f2;
+}
+.section-slider .plans-container .plans .plan-box:nth-of-type(2) {
+  border: 2.5px solid #f2f2f2;
+}
+.section-slider .plans-container .plans .plan-box:nth-of-type(3) {
+  border: 1px solid #f2f2f2;
+}
+.section-slider .plans-container .plans .plan-box .plan-header{
+  width:100%;
+  height:30%;
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+  min-height:40px;
+}
+.section-slider .plan-header > h1 {
+  color:#707070;
+  text-shadow: 2px 2px #70707091;
+  font-size:38px;
+  
+}
+.section-slider .plans-container .plans .plan-box .plan-header .orange-border{
+  width:33%;
+  border-radius:25px;
+  background-color:#e69205;
+  padding:4.5px;
+}
+
+.section-slider .plans-container .plans .plan-box .plan-body {
+
+  width:100%;
+  flex-direction: column;
+  min-height:130px;
+  max-height:140px;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.section-slider .plans-container .plans .plan-box .plan-body span {
+  display:flex;
+  align-items:center;
+  flex-direction: row;
+  font-size:clamp(12px, 17px, 17.5px);
+  flex-wrap:nowrap;
+}
+
+  
+.section-slider .plans-container .plans .plan-box .plan-body .feature-container-even {
+  width:82%;
+  max-height:125px;
+
+  display:flex;
+  align-items:flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-slider .plans-container .plans .plan-box .plan-body .feature-container-odd {
+  width:82%;
+  max-height:75px;
+  
+  color:black;
+  display:flex;
+  align-items:flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section-slider .plans-container .plans .plan-box .plan-body .feature-space{
+  width:50%;
+  color: black;
+ 
+}
+.section-slider .plans-container .plans .plan-box .plan-button{
+  width:100%;
+
+  display:flex;
+  min-height:20px;
+  min-height:40px;
+  align-items:center;
+  justify-content: center;
+}
+.section-slider .plans-container .plans .plan-box .plan-button-container > h1 {
+  color:white;
+  text-shadow: 1px 1px white;
+  font-size:30px;
+}
+
+.section-slider .plans-container .plans .plan-box .plan-button-container{
+  width:52%;
+  border-radius:2px;
+  background-image: linear-gradient(#e7930d 85%, #f0c680 15%);
+  background-color:#e7930d;
+  box-shadow: 0 0 0.8em #e7930d;
+  min-height:20px;
+  min-height:20px;
+  
+  margin-top:105px;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  
+}
+
+
+.section-slider .plans-container .plans .plan-box .plan-body .icon-check{
+  color:#04AA6D;
+}
+@media screen and (max-width:1200px) {
+  .section-slider .container .assetSlider .planText p{
+    font-size:1.5em;
+    line-height:20px;
+  }
+  .section-slider .plans-container .plans .plan-box .plan-body .feature-container-even, .section-slider .plans-container .plans .plan-box .plan-body .feature-container-odd {
+    width:82%;
+    
+  }
+  
+  .section-slider .plans-container .plans .plan-box .plan-body span {
+    font-size:14.5px;
+  }
+}
+@media screen and (max-width:1024px) {
+
+  .section-slider .container .assetSlider .planText p{
+    font-size:1.3em;
+  }
+  .section-slider .plans-container .plans .plan-box .plan-body .feature-container-even, .section-slider .plans-container .plans .plan-box .plan-body .feature-container-odd {
+    width:93%;
+    
+  }
+  .section-slider .plans-container .plans .plan-box .plan-button-container {
+    width: 70%;
+  }
+  .section-slider .plans-container .plans .plan-box .plan-body span {
+    font-size:11.7px;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .section-slider .assetSlider {
+    width:100%;
+   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-slider .plans-container .plans .plan-box .plan-button-container {
+    width: 85%;
+  }
+  .section-slider .plans-container .text-apresentation {
+    text-align:center;
+    
+  }
+ 
+  .section-slider .plans-container .plans {
+    display:none;
+    min-height:0px;
+    height:0px;
+  }
+  .section-slider .plans-container h1{
+    font-size:2.3rem;
+    color: #3d667b;
+  }
+  .section-slider .assetSlider .planText {
+    align-items:center;
+    justify-content: center;
+  }
+  .section-slider .assetSlider img{
+    width:100px;
+
+  }
+}
+.mr5px {
+  margin-right:5px;
+}

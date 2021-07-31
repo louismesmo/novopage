@@ -5,7 +5,6 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -24,7 +23,9 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
     <meta name="robots" content="noindex, nofollow" />
     <title>PMóvel</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
     <link type="text/css" rel="stylesheet" href="examples.css" />
+    <link type="text/css" rel="stylesheet" href="collaps.css" />
     <link type="text/css" rel="stylesheet" href="mmenu.css" />
     <script src="mmenu.js"></script>
 
@@ -102,7 +103,7 @@
                     <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false" style="background-color: transparent; border-color: transparent;">
 
-                        <img src="imgs/br_flag.png" style="max-width: 44px; max-height: 44px;">
+                        <img src="imgs/br_flag.png" style="max-width: 34px; max-height: 34px;">
                     </button>
                     <div class="dropdown-menu dropdown-menu-right animate__animated animate__zoomInRight animate__faster">
 
@@ -288,7 +289,7 @@
                 <div class="features" style="margin-top: 50px;">
 
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
-                        data-interval="10000">
+                        data-interval="20000">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -517,27 +518,300 @@
 
                             </div>
                         </div>
-
-
-
-
                     </div>
-
-
-
-
-
                 </div>
 
-                <div class="budget_slider"></div>
+                <div class="section-slider">
+                    <div class="container">
+                      <div class="assetSlider">
+                        <img src = "imgs/assetImg.png" />
+                        <div class="planText">
+                          <p style = "text-align: center;margin-top:2px;">Calcule agora o plano <strong><br>perfeito pra você!</br></strong></p>            
+                        </div>
+                      </div>
+                      <br><br><br>
+                      <div class="plans-container">
+                        <div class = "text-apresentation">
+                            <h1>Minha empresa possui <span id = "life"></span> vidas</h1>
+                        </div>
+                        <br>
+                        <div class="slidecontainer">
+                          <input type = "range" min = "1" max = "100" value = "1" class = "slider" id = "sliderRange" />
+                        </div> <!--slidercontainer-->
+                        <div class="slider-info">
+                          <p >Arraste para aumentar ou diminuir</p>
+                        </div>
+                        <br>
+                        <div class="plans">
+                          <div class="plan-box">
+                            <div class="plan-header">
+                              <h1 class = "price-pop"></h1>
+                              <p></p>
+                              <div class="orange-border"></div>
+                              <br>
+                            </div>
+                            <div class="plan-body">
+                              <div class="feature-container-even">
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i>  Geolocalização</span>
+                                </div>
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check float-right mr5px"></i> Banco de Horas</span>
+                                </div>
+                              </div>
+                              <p></p>
+                              <div class="feature-container-even">
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i> Fechamento</span>
+                                </div>
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check float-right mr5px"></i> Relatórios</span>
+              
+                                </div>
+                                <div class="clear"></div>
+                                <div class="nomiddle"></div>
+                                <div class="clear"></div>
+                              </div> 
+                              <p></p>
+                              <div class="feature-container-odd">
+                                <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i> Escala Simples</span>
+                              </div> 
+                              <p></p>
+                              <div class="feature-container-odd">
+                                <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i> Ausências</span>
+                              </div> 
+                              <p></p>
+                              <div class="feature-container-odd">
+                                <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i> Cadastro de Funcionário</span>
+                              </div> 
+                              <p></p>
+                            </div>
+                            <div class="plan-button">
+                              <div class="plan-button-container">
+                                <h1>POP</h1>
+                              </div>
+                            </div> <!--plan-button-->
+                            
+                          </div> <!--plan-box-->
+                          <div class="plan-box">
+                            <div class="plan-header">
+                              <h1 class = "price-plus"></h1>
+                              <p></p>
+                              <div class="orange-border" style = "background-color: #a1e573;"></div>
+                              <p></p>
+                            </div>
+                            <div class="plan-body">
+                              <div class="feature-container-even">
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i>  Geolocalização</span>
+                                </div>
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check float-right mr5px"></i> Banco de Horas</span>
+                                </div>
+                              </div>
+                              <p></p>
+                              <div class="feature-container-even">
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i> Fechamento</span>
+                                </div>
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check float-right mr5px"></i> Relatórios</span>
+                                
+                                </div>
+                                
+                                <div class="clear"></div>
+                                <div class="nomiddle"></div>
+                                <div class="clear"></div>
+                              </div> 
+                              <p></p>
+                              <div class="feature-container-even">
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i> Escala Simples</span>
+                                </div>
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-plus-circle mr5px" style = "color:#a4e577;"></i> SELFIE</span>
+                                </div>
+                              </div> 
+                              <p></p>
+                              <div class="feature-container-even">
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i> Ausências</span>
+              
+                                </div>
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-plus-circle mr5px" style = "color:#a4e577;"></i> QR CODE</span>
+                                </div>
+                              </div> 
+                              <p></p>
+                              <div class="feature-container-odd">
+                                <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i> Cadastro de Funcionário</span>
+                              </div> 
+                              <p></p>
+                            </div>
+                            <div class="plan-button">
+                              <div class="plan-button-container" style = "background-image: linear-gradient(#a4e676 85%, #68c057 15%);box-shadow: 0 0 0.8em #68c057">
+                                <h1>PLUS</h1>
+                              </div>
+                            </div> <!--plan-button-->
+                          </div><!--plan-box-->
+                          <div class="plan-box">
+                            <div class="plan-header">
+                              <h1 class = "price-premium"></h1>
+                              <p></p>
+                              <div class="orange-border" style = "background-color: #5be0e6;"></div>
+                              <p></p>
+                            </div>
+                            <div class="plan-body">
+                              <div class="feature-container-even">
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i>  Geolocalização</span>
+                                </div>
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check float-right mr5px"></i> Banco de Horas</span>
+                                </div>
+                              </div>
+                              <p></p>
+                              <div class="feature-container-even">
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i> Fechamento</span>
+                                </div>
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check float-right mr5px"></i> Relatórios</span>
+              
+                                </div>
+                                <div class="clear"></div>
+                                <div class="nomiddle"></div>
+                                <div class="clear"></div>
+                              </div> 
+                              <p></p>
+                              <div class="feature-container-even">
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i> Escala Simples</span>
+                                </div>
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check mr5px" ></i> SELFIE</span>
+                                </div>
+                              </div> 
+                              <p></p>
+                              <div class="feature-container-even">
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i> Ausências</span>
+                                </div>
+                                <div class="feature-space">
+                                  <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i> QR CODE</span>
+                                </div>
+                              </div> 
+                              <p></p>
+                              <div class="feature-container-odd">
+                                <span><i class="fas fa-1x fa-check-circle icon-check mr5px"></i> Cadastro de Funcionário</span>
+                              </div> 
+                              <p></p>
+                              <div class="feature-container-odd">
+                                <span><i class="fas fa-1x fa-plus-circle icon-check mr5px" style = "color:#a4e577;"></i> Módulo Completo de Férias</span>
+                              </div> 
+                              <p></p>
+                              <div class="feature-container-odd">
+                                <span><i class="fas fa-1x fa-plus-circle icon-check mr5px" style = "color:#a4e577;"></i> Módulo de Documentos</span>
+                              </div> 
+                            </div>
+                            <div class="plan-button">
+                              <div class="plan-button-container" style = "background-image: linear-gradient(#5ae0e5 85%, #37b5fe 15%); box-shadow: 0 0 0.8em #37b5fe;">
+                                <h1>PREMIUM</h1>
+                              </div>
+                            </div> <!--plan-button-->
+                          </div> <!--plan-box-->
+                        </div> <!--plans-->
+                      </div>
+                    </div>
+                    
+                </div>
+                <div class="budget_slider">
+                    <h1 style="color: lightgray; font-size: 16px;">Clique para saber mais sobre os planos</h1>
+                    <div class="collapse">
+
+                        <button class="collapsible" id="header1">P<br>O<br>P</button>
+                        <div class="content">
+                            <div class="content_center">
+                            <div style="height: 10px; border-radius: 5px;width: 100%; display: flex; align-self: center; justify-content: center; background-color: #e7950d;"><p></p></div>
+                            <br>
+                            <div style="color: #e7950d;font-size: 30px;
+                            font-family: 'Open Sans';
+                            font-weight: 800;">POP</div>
+                            <br>
+                            <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Geolocalização</span>
+                            <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Fechamento</span>
+                            <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Escala Simples</span>
+                            <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Ausências</span>
+                            <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Cadastro de Funcionários</span>
+                            <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Banco de Horas</span>
+                            <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Relatórios</span>
+                            <br><br><div name="price-pop" class="price-pop"></div>
+                        </div>
+                        </div>
+                        <button class="collapsible" id="header2">P<br>L<br>U<br>S</button>
+                        <div class="content2">
+                            <div class="content_center">
+                                <div style="height: 10px; border-radius: 5px;width: 100%; display: flex; align-self: center; justify-content: center; background-color: #a4e676;"><p></p></div>
+                                <br>
+                                <div style="color: #a4e676;font-size: 30px;
+                                font-family: 'Open Sans';
+                                font-weight: 800;">PLUS</div>
+                                <br>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Geolocalização</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Fechamento</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Escala Simples</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Ausências</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Cadastro de Funcionários</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Banco de Horas</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Relatórios</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-plus-circle" style="color:#a4e676; margin-right: 10px;"></i>SELFIE</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-plus-circle" style="color:#a4e676; margin-right: 10px;"></i>QR CODE</span>
+                                <br><br><div name="price-plus" class="price-plus"></div>
+                            </div>
+                        </div>
+                        <button class="collapsible" id="header3">P<br>R<br>E<br>M<br>I<br>U<br>M</button>
+                        <div class="content3">
+                          
+                            <div class="content_center">
+                                <div style="height: 10px; border-radius: 5px;width: 100%; display: flex; align-self: center; justify-content: center; background-color: turquoise;"><p></p></div>
+                                <br>
+                                <div style="color: turquoise;font-size: 26px;
+                                font-family: 'Open Sans';
+                                font-weight: 800;">PREMIUM</div>
+                                <div style="height: 10px;"></div>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Geolocalização</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Fechamento</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Escala Simples</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Ausências</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Cadastro de Funcionários</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Banco de Horas</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>Relatórios</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>SELFIE</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-check-circle" style="color:#04AA6D; margin-right: 10px;"></i>QR CODE</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-plus-circle" style="color:#a4e676; margin-right: 10px;"></i>Módulo Completo de Férias</span>
+                                <span style="color: black;"><i class="fas fa-1x fa-plus-circle" style="color:#a4e676; margin-right: 10px;"></i>Módulo de Documentos</span>
+                                <br><div name="price-premium" class="price-premium"></div>
+                            </div>
+
+                        </div>
+            
+            
+            
+            
+                    </div>
+                </div>
+                <div class="flavor_slider">
+                    <div class="flavor_slider_txt">
+                    <h1>Sempre</h1><h3> em conta, do pequeno<br>empreendedor às </h3><h2>grandes</h2><br><h3>empresas!</h3>
+                </div></div>
                 
                 <div class="footer">
                     <div class="foot_cont">
-<div class="assin">
-    
-</div>
-<div class="mail_border">
-                    <div class="mail">
+                <div class="assin">
+                    
+                </div>
+                <div class="mail_border">
+                    <div class="mail" id="mail">
 
                         <form class="w-100 border border-light p-5">
     
@@ -554,12 +828,13 @@
                         
                             <select class="browser-default custom-select mb-4" id="lifes">
                                 <option value="" disabled="" selected="">Escolha uma opção</option>
-                                <option value="1">Option 1</option>
-                                <option value="2">Option 2</option>
-                                <option value="3">Option 3</option>
+                                <option value="1">1-10 funcionários</option>
+                                <option value="2">11-25 funcionários</option>
+                                <option value="3">26-50 funcionários</option>
+                                <option value="4">51+ funcionários</option>
                             </select>
                         
-                            <button class="btn btn-info btn-block" type="submit">Quero conhecer mais!</button>
+                            <button class="btn btn-info btn-block btn_send" type="submit">Quero conhecer mais!</button>
                         </form>
                             
     
@@ -583,8 +858,8 @@
 
 
 
-
-
+    <script src ="slider.js"></script>
+    <script src="collaps.js"></script>
 
 </body>
 

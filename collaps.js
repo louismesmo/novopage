@@ -5,14 +5,16 @@ coll.item(0).addEventListener("click", function() {
     var content = this.nextElementSibling;
     var cont2 = (content.nextElementSibling).nextElementSibling;
     var cont3 = (cont2.nextElementSibling).nextElementSibling;
-    if (content.style.maxWidth){
-      content.style.maxWidth = null;
+    if (content.style.minWidth){
+      content.style.minWidth = null;
       document.getElementById("header2").innerHTML = "P<br>L<br>U<br>S";
         document.getElementById("header3").innerHTML = "P<br>R<br>E<br>M<br>I<br>U<br>M";
     } else {
-      content.style.maxWidth = 350 + "px";
-        cont2.style.maxWidth = null;
-        cont3.style.maxWidth = null;
+      content.style.minWidth = 300 + "px";
+        cont2.style.minWidth = null;
+        cont3.style.minWidth = null;
+      document.getElementById("header1").innerHTML = "";
+
         document.getElementById("header2").innerHTML = "";
         document.getElementById("header3").innerHTML = "";
     } 
@@ -23,16 +25,18 @@ coll.item(0).addEventListener("click", function() {
     var content2 = this.nextElementSibling;
     var cont2_2 = (content2.nextElementSibling).nextElementSibling;
     var cont3_2 = (content2.previousElementSibling).previousElementSibling;
-    if (content2.style.maxWidth){
-      content2.style.maxWidth = null;
+    if (content2.style.minWidth){
+      content2.style.minWidth = null;
       document.getElementById("header1").innerHTML = "P<br>O<br>P";
         document.getElementById("header3").innerHTML = "P<br>R<br>E<br>M<br>I<br>U<br>M";
     
     } else {
-      content2.style.maxWidth = 350 + "px";
-      cont2_2.style.maxWidth = null;
-      cont3_2.style.maxWidth = null;
+      content2.style.minWidth = 300 + "px";
+      cont2_2.style.minWidth = null;
+      cont3_2.style.minWidth = null;
       document.getElementById("header1").innerHTML = "";
+      document.getElementById("header2").innerHTML = "";
+
         document.getElementById("header3").innerHTML = "";
     } 
   });
@@ -42,16 +46,18 @@ coll.item(0).addEventListener("click", function() {
     var content3 = this.nextElementSibling;
     var cont2_3 = (content3.previousElementSibling).previousElementSibling;
     var cont3_3 = (cont2_3.previousElementSibling).previousElementSibling;
-    if (content3.style.maxWidth){
-      content3.style.maxWidth = null;
+    if (content3.style.minWidth){
+      content3.style.minWidth = null;
       document.getElementById("header2").innerHTML = "P<br>L<br>U<br>S";
         document.getElementById("header1").innerHTML = "P<br>O<br>P";
     
     } else {
-      content3.style.maxWidth = 350 + "px";
-      cont2_3.style.maxWidth = null;
-        cont3_3.style.maxWidth = null;
+      content3.style.minWidth = 300 + "px";
+      cont2_3.style.minWidth = null;
+        cont3_3.style.minWidth = null;
         document.getElementById("header2").innerHTML = "";
         document.getElementById("header1").innerHTML = "";
+        document.getElementById("header3").innerHTML = "";
+
     } 
   });

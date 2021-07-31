@@ -1,10 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;1,300&display=swap");
+@font-face {
+  font-family: "PeaceSans";
+  src: url("fonts/Peace_Sans_Webfont.woff") format("woff");
+}
+
 .collapse {
   display: flex;
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   height: 400px;
   justify-content: stretch;
   align-items: center;
   align-content: center;
+}
+.collapse p {
+    color: gray;
 }
 .collapsible {
   background-color: #777;
@@ -15,24 +26,55 @@
   border: none;
   text-align: center;
   outline: none;
-  font-size: 15px;
+  font-size: 28px;
+  line-height: 30px;
+  font-family: "Open Sans";
+  font-weight: 800;
+}
+.price-pop, .price-plus, .price-premium{
+    display: flex;
+justify-self: flex-end;
+align-self: center;
+    color: gray;
+    font-size: 30px !important;
+    text-shadow: 2px 2px #70707091;
+}
+.price-premium{
+    font-size: 25px !important;
 }
 
-.active {
-}
 
 .content,
 .content2,
 .content3 {
+    display: flex;
     box-sizing: border-box;
-  padding: 18px 0px;
+  padding: 18px 0px 13px 0px;
   max-width: 0;
-  height: 350px;
+  min-width: 0;
+  height: 400px;
   overflow: hidden;
-  transition: max-width 0.2s ease-out;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 0.2s ease-out;
   background-color:#f2f2f2;
   border-radius:5.6px;
   box-shadow:  0 0 2.2em #afaeae;
+}
+.content_center {
+    display: flex;
+    align-self: center;
+    flex-flow: column wrap;
+    width: 70%;
+    height: 100%;
+    align-items: flex-start;
+}
+.content p, .content2 p, .content3 p {
+    font-size: 20px;
+    color: gray;
+    font-family: "Open Sans";
+    font-weight: 800;
 }
 #header1 {
   background-image: linear-gradient(#e7950d 90%,#f1c781 0%);
@@ -43,3 +85,4 @@
 #header3 {
   background-image: linear-gradient(turquoise 90%, lightblue 0%);
 
+}
