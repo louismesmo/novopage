@@ -1,0 +1,45 @@
+.collapse {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  justify-content: stretch;
+  align-items: center;
+  align-content: center;
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  height: 100%;
+  width: 33%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.active {
+}
+
+.content,
+.content2,
+.content3 {
+    box-sizing: border-box;
+  padding: 18px 0px;
+  max-width: 0;
+  height: 350px;
+  overflow: hidden;
+  transition: max-width 0.2s ease-out;
+  background-color:#f2f2f2;
+  border-radius:5.6px;
+  box-shadow:  0 0 2.2em #afaeae;
+}
+#header1 {
+  background-image: linear-gradient(#e7950d 90%,#f1c781 0%);
+}
+#header2 {
+  background-image: linear-gradient(#a4e676 90%, #6ac259 0%);
+}
+#header3 {
+  background-image: linear-gradient(turquoise 90%, lightblue 0%);
+
