@@ -1,3 +1,4 @@
+
 var coll = document.getElementsByClassName("collapsible");
 coll.item(0).addEventListener("click", function() {
     this.classList.toggle("active");

@@ -81,26 +81,22 @@ slider.onchange = function() {
   if(value < 33) {
     this.style.background = 'linear-gradient(to right, #5BE0E6 0%, #5BE0E6 0%, #DCDCDC 0%, #DCDCDC 100%)'
     this.value = 1;
-    lifes.value = 1;
   
     
   }
   else if(value >= 33 && value < 66) {
     this.style.background = 'linear-gradient(to right, #5BE0E6 0%, #5BE0E6 33%, #DCDCDC 33%, #DCDCDC 100%)'
     this.value = 33
-    lifes.value = 2;
 
   }
   else if(value >= 66 && value < 100) {
     this.style.background = 'linear-gradient(to right, #5BE0E6 0%, #5BE0E6 66%, #DCDCDC 66%, #DCDCDC 100%)'
     this.value = 66;
-    lifes.value = 3;
 
   }
   else if(value == 100) {
     this.style.background = 'linear-gradient(to right, #5BE0E6 0%, #5BE0E6 100%, #DCDCDC 100%, #DCDCDC 100%)'
     this.value = 100;
-    lifes.value = 4;
    
   }
 
