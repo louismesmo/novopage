@@ -368,6 +368,9 @@ display: none;
   width: 40px;
   height: auto;
 }
+.icon_title img:hover {
+  animation: shake 3s 1;
+}
 
 .carousel_desc {
   display: flex;
