@@ -413,6 +413,9 @@ display: none;
   width: max(100%, 250px);
   height: auto;
 }
+.office img:hover {
+  content: url("imgs/blog_img_anim.gif");
+}
 .blog_text {
   display: flex;
   align-self: flex-end;

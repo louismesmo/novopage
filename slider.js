@@ -28,7 +28,7 @@ slider.oninput = function() {
   let premium1 = document.getElementsByClassName('price-premium').item(1);
   var sliderRangeValue = (this.value-this.min)/(this.max-this.min)*100
   this.style.background = 'linear-gradient(to right, #5BE0E6 0%, #5BE0E6 ' + sliderRangeValue + '%, #DCDCDC ' + sliderRangeValue + '%, #DCDCDC 100%)'
-  if(value < 33) {
+  if(value < 16) {
    
     life.innerHTML = `De 1 Até 10`
     pop.innerHTML = 'R$49,90'
@@ -39,7 +39,7 @@ slider.oninput = function() {
     premium1.innerHTML = 'R$99,90'
     
   }
-  else if(value >= 33 && value < 66) {
+  else if(value >= 16 && value < 49) {
   
 
     life.innerHTML = `De 11 Até 25`
@@ -50,7 +50,7 @@ slider.oninput = function() {
     plus1.innerHTML = 'R$175,00'
     premium1.innerHTML = 'R$245,00'
   }
-  else if(value >= 66 && value < 100) {
+  else if(value >= 49 && value < 84) {
     
 
     life.innerHTML = `De 26 Até 50`
@@ -61,7 +61,7 @@ slider.oninput = function() {
     plus1.innerHTML = 'R$299,90'
     premium1.innerHTML = 'R$399,90'
   }
-  else if(value == 100) {
+  else if(value >= 84) {
     
 
   
@@ -78,23 +78,23 @@ slider.oninput = function() {
 slider.onchange = function() {
   value = parseInt(this.value);
   
-  if(value < 33) {
+  if(value < 16) {
     this.style.background = 'linear-gradient(to right, #5BE0E6 0%, #5BE0E6 0%, #DCDCDC 0%, #DCDCDC 100%)'
     this.value = 1;
   
     
   }
-  else if(value >= 33 && value < 66) {
+  else if(value >= 16 && value < 49) {
     this.style.background = 'linear-gradient(to right, #5BE0E6 0%, #5BE0E6 33%, #DCDCDC 33%, #DCDCDC 100%)'
     this.value = 33
 
   }
-  else if(value >= 66 && value < 100) {
+  else if(value >= 49 && value < 84) {
     this.style.background = 'linear-gradient(to right, #5BE0E6 0%, #5BE0E6 66%, #DCDCDC 66%, #DCDCDC 100%)'
     this.value = 66;
 
   }
-  else if(value == 100) {
+  else if(value >= 84) {
     this.style.background = 'linear-gradient(to right, #5BE0E6 0%, #5BE0E6 100%, #DCDCDC 100%, #DCDCDC 100%)'
     this.value = 100;
    
