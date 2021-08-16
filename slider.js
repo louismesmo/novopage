@@ -30,7 +30,7 @@ slider.oninput = function() {
   this.style.background = 'linear-gradient(to right, #5BE0E6 0%, #5BE0E6 ' + sliderRangeValue + '%, #DCDCDC ' + sliderRangeValue + '%, #DCDCDC 100%)'
   if(value < 16) {
    
-    life.innerHTML = `De 1 Até 10`
+    life.innerHTML = `de 1 até 10`
     pop.innerHTML = 'R$49,90'
     plus.innerHTML = 'R$69,90'
     premium.innerHTML = 'R$99,90'
@@ -42,7 +42,7 @@ slider.oninput = function() {
   else if(value >= 16 && value < 49) {
   
 
-    life.innerHTML = `De 11 Até 25`
+    life.innerHTML = `de 11 até 25`
     pop.innerHTML = 'R$125,00'
     plus.innerHTML = 'R$175,00'
     premium.innerHTML = 'R$245,00'
@@ -53,7 +53,7 @@ slider.oninput = function() {
   else if(value >= 49 && value < 84) {
     
 
-    life.innerHTML = `De 26 Até 50`
+    life.innerHTML = `de 26 até 50`
     pop.innerHTML = 'R$245,00'
     plus.innerHTML = 'R$299,90'
     premium.innerHTML = 'R$399,90'
@@ -65,7 +65,7 @@ slider.oninput = function() {
     
 
   
-    life.innerHTML = `De 51 Até 100+`
+    life.innerHTML = `mais de 50`
     pop.innerHTML = 'R$399,90'
     plus.innerHTML = 'R$499,90'
     premium.innerHTML = 'R$699,90'
